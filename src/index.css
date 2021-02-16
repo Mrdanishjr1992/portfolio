@@ -18,14 +18,13 @@ footer {
     text-align: center;
 }
 .project {
-    display: flex;
-    height: max-content;
-    box-sizing: border-box;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    padding: 1em;
+    height: 60vh;
+    background-color: rgb(162, 22, 19);
     font-size: 1.3em;
     color: whitesmoke;
+}
+img{
+    width: 100%;
 }
 .btn {
     background-color: rgb(136, 11, 9);
