@@ -1,5 +1,10 @@
 import React from 'react'
 
 export default function Contact(){
-    return <h1>SinglePost</h1>
+    return (
+        <div className="wrap">
+            <input type="text" placeholder="Email Address"/>
+            <button type="submit" className="btn">Contact</button>
+        </div>
+    )
 }

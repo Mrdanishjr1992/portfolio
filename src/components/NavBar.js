@@ -4,40 +4,39 @@ import { SocialIcon } from 'react-social-icons'
 
 export default function NavBar(){
     return (
-        <header className="bg-red-600">
+        <header className="bg-red-800">
             <div className="container mx-auto flex justify-around">
                 <nav className="flex">
-
                     <NavLink 
-                        to="/" exact 
+                        to="" exact 
                         activeClassName="text-white bg-red-700"
                         className="inline-flex items-center py-7 px-3 mx-20 rounded text-white hover:text-green-300 text-5xl font-bold cursive tracking-widest"
                     >
                         Dev Danish
                     </NavLink>
                     <NavLink 
-                        to="/project"
+                        to="project"
                         activeClassName="text-black bg-red-700"
                         className="inline-flex items-center py-4 px-4 my-6 rounded text-white hover:text-green-300"
                     >
                         Projects
                     </NavLink>
                     <NavLink 
-                        to="/skills"
+                        to="skill"
                         activeClassName="text-black bg-red-700"
                         className="inline-flex items-center py-4 px-4 my-6 rounded text-white hover:text-green-300"
                         >
                         Skills/Resume
                     </NavLink>
                     <NavLink 
-                        to="/about"
+                        to="about"
                         activeClassName="text-black bg-red-700"
                         className="inline-flex items-center py-4 px-4 my-6 rounded text-white hover:text-green-300"
                         >
                         About me!
                     </NavLink>
                     <NavLink 
-                        to="/contact"
+                        to="contact"
                         activeClassName="text-black bg-red-700"
                         className="inline-flex items-center py-4 px-4 my-6 rounded text-white hover:text-green-300"
                         >
