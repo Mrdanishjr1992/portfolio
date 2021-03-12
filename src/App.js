@@ -7,25 +7,22 @@ import Project from './components/Project';
 import ProjectDetail from './components/ProjectDetail';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import './App.css';
-
 
 function App() {
-
-  return (
-    <BrowserRouter>
-      <NavBar/>
-        <Switch>
-          <Route component={About} path='/about'/>
-          <Route component={Project} path='/project'/>
-          <Route component={ProjectDetail} path='/project/:slug'/>
-          <Route component={Skill} path='/skill'/>
-          <Route component={Contact} path='/contact'/>
-          <Route component={Home} path='/' />
-        </Switch>
-      <Footer/>
-    </BrowserRouter>
-  )
-};
+	return (
+		<BrowserRouter>
+			<NavBar />
+			<Switch>
+				<Route component={About} path="/about" />
+				<Route component={Project} path="/project" />
+				<Route component={ProjectDetail} path="/project/:slug" />
+				<Route component={Skill} path="/skill" />
+				<Route component={Contact} path="/contact" />
+				<Route component={Home} path="/" />
+			</Switch>
+			<Footer />
+		</BrowserRouter>
+	);
+}
 
 export default App;
