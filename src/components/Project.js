@@ -1,46 +1,70 @@
-import React , { useState , useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { SocialIcon } from 'react-social-icons'
-import sanityClient from '../client.js'
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { SocialIcon } from 'react-social-icons';
 
-export default function Project(){
-    const [postData, setPost] = useState(null);
+export default function Project() {
+	const [postData, setPost] = useState(10);
 
-    useEffect(()=>{
-        sanityClient.fetch(`*[_type == 'post']{
-                title,
-                slug,
-                mainImage{
-                    asset->{
-                        _id,
-                        url
-                    },
-                    alt
-                }
-            }`)
-            .then((data)=> setPost(data))
-            .catch(console.error)
-    },[])
+	useEffect(() => {}, []);
 
-
-    return (
-        <main className='min-h-screen p12'>
-            <section className="container mx-auto">
-                <h1 className="text-white text-8xl cursive flex justify-center p-5">Projects Page</h1>
-                <div className="projects container grid md:cols-2 lg:grid-cols-3 gap-8">
-                    {postData && postData.map((post,index)=>(
-                        <div key={index} className="project block relative leading-snug bg-red-800 border-4 rounded border-red-800" style={ { backgroundImage: post.mainImage.asset.url }}>
-                            <Link to={"/project/"+ post.slug.current} key={post.slug.current}>
-                                <img  src={post.mainImage.asset.url} alt={post.mainImage.alt} className="absolute object-cover w-full h-full"/>
-                            </Link>
-                            <div className="bg-red-800 relative flex justify-center  p-2 lg:p-4">
-                                <h3 className="text-white mr-5">{post.title}</h3>
-                                <SocialIcon url={'https://github.com/Mrdanishjr1992/'+post.slug.current} className="block ml-5" target="_blank" fgColor="#fff" style={ { height:45, width: 45 } } />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-        </main>
-    )
+	return (
+		<>
+			<h2 id="projects">PROJECTS</h2>
+			<section id="section1">
+				<div className="item">
+					<img src="../images/rgm-loading.png" alt="retro game maker" />
+					<p>Retro Game Maker</p>
+					<div className="share">
+						<a href="https://retro-game-maker-app.herokuapp.com/">App Site</a>
+						<span> || </span>
+						<a href="https://github.com/Mrdanishjr1992/Retro-Game-Maker">
+							GitHub
+						</a>
+					</div>
+				</div>
+				<div className="item">
+					<img src="../images/wayfarer.png" alt="project wayfarer" />
+					<p>Wayfarer</p>
+					<div className="share">
+						<a href="https://wayfarer-app-1207.herokuapp.com/">App Site</a>
+						<span> || </span>
+						<a href="https://git.generalassemb.ly/jessicalh/Project-Wayfarer">
+							GitHub
+						</a>
+					</div>
+				</div>
+				<div className="item">
+					<img src="../images/ga-fighters.png" alt="g.a fighters" />
+					<p>G.A - Fighters</p>
+					<div className="share">
+						<a href="https://ga-fighters.herokuapp.com/">App Site</a>
+						<span> || </span>
+						<a href="https://git.generalassemb.ly/kennytrinh/fighter/tree/master">
+							GitHub
+						</a>
+					</div>
+				</div>
+				<div className="item">
+					<img src="../images/tom.png" alt="tom" />
+					<p>Tomagatchi Pets</p>
+					<div className="share">
+						<a href="https://boring-spence-7df0b7.netlify.app/">App Site</a>
+						<span> || </span>
+						<a href="https://git.generalassemb.ly/mrdanishjr1992/Tamagotchi-pet">
+							GitHub
+						</a>
+					</div>
+				</div>
+				<div className="item">
+					<img src="../images/rgm-landing.png" alt="storage space" />
+					<p>Storage Space</p>
+					<div className="share">
+						<a href="https://storage-space-app.herokuapp.com/">App Site</a>
+						<span> || </span>
+						<a href="https://github.com/Mrdanishjr1992/Storage-Space">GitHub</a>
+					</div>
+				</div>
+			</section>
+		</>
+	);
 }

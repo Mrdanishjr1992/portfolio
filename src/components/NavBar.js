@@ -1,54 +1,54 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from 'react-social-icons';
 
-export default function NavBar(){
-    return (
-        <header className="bg-red-800">
-            <div className="container mx-auto flex justify-around">
-                <nav className="flex">
-                    <NavLink 
-                        to="" exact 
-                        activeClassName="text-white bg-red-700"
-                        className="inline-flex items-center py-7 px-3 mx-20 rounded text-white hover:text-green-300 text-5xl font-bold cursive tracking-widest"
-                    >
-                        Dev Danish
-                    </NavLink>
-                    <NavLink 
-                        to="project"
-                        activeClassName="text-black bg-red-700"
-                        className="inline-flex items-center py-4 px-4 my-6 rounded text-white hover:text-green-300"
-                    >
-                        Projects
-                    </NavLink>
-                    <NavLink 
-                        to="skill"
-                        activeClassName="text-black bg-red-700"
-                        className="inline-flex items-center py-4 px-4 my-6 rounded text-white hover:text-green-300"
-                        >
-                        Skills/Resume
-                    </NavLink>
-                    <NavLink 
-                        to="about"
-                        activeClassName="text-black bg-red-700"
-                        className="inline-flex items-center py-4 px-4 my-6 rounded text-white hover:text-green-300"
-                        >
-                        About me!
-                    </NavLink>
-                    <NavLink 
-                        to="contact"
-                        activeClassName="text-black bg-red-700"
-                        className="inline-flex items-center py-4 px-4 my-6 rounded text-white hover:text-green-300"
-                        >
-                        Contact
-                    </NavLink>
-                </nav>
-                <div className="inline-flex py-3 px-3 my-6">
-                    <SocialIcon url="https://www.linkedin.com/in/mohamed-s-abdulah/" className="mr-4" target="_blank" fgColor="#fff" style={ { height:35, width: 35 } } />
-                    <SocialIcon url="https://github.com/Mrdanishjr1992" className="mr-4" target="_blank" fgColor="#fff" style={ { height:35, width: 35 } } />
-                    <SocialIcon url="https://twitter.com/Mohamed_S_Abdul" className="mr-4" target="_blank" fgColor="#fff" style={ { height:35, width: 35 } } />
-                </div>
-            </div>
-        </header>
-    )
+export default function NavBar() {
+	return (
+		<header className="header">
+			<nav className="navbar">
+				<NavLink to="/" exact className="logo p-4 h-full mx-5">
+					<img
+						src="https://fontmeme.com/permalink/210313/accbc9f4c4fb43e44f461c0c178b44f5.png"
+						alt="netflix-font"
+						border="0"
+					/>
+				</NavLink>
+				<NavLink to="#projects" className="nav-link">
+					Family
+				</NavLink>
+				<NavLink to="#skills" className="nav-link">
+					Friends
+				</NavLink>
+				<NavLink to="#about" className="nav-link">
+					Career
+				</NavLink>
+				<NavLink to="#contact" className="nav-link">
+					Life
+				</NavLink>
+			</nav>
+			<div className="icon-box">
+				<SocialIcon
+					url="https://www.linkedin.com/in/mohamed-s-abdulah/"
+					className="icon"
+					target="_blank"
+					fgColor="#fff"
+					style={{ height: 35, width: 35 }}
+				/>
+				<SocialIcon
+					url="https://github.com/Mrdanishjr1992"
+					className="icon"
+					target="_blank"
+					fgColor="#fff"
+					style={{ height: 35, width: 35 }}
+				/>
+				<SocialIcon
+					url="https://twitter.com/Mohamed_S_Abdul"
+					className="icon"
+					target="_blank"
+					fgColor="#fff"
+					style={{ height: 35, width: 35 }}
+				/>
+			</div>
+		</header>
+	);
 }

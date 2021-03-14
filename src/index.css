@@ -5,8 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	background-color: #111111;
+	margin: 0;
+	background-color: #242323;
 	max-width: 100vw;
 	max-height: 100vh;
 }
@@ -16,14 +21,35 @@ footer {
 	width: 100%;
 	text-align: center;
 }
-.project {
-	height: 60vh;
-	background-color: rgb(162, 22, 19);
-	font-size: 1.3em;
-	color: whitesmoke;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #fff;
+	padding: 1em;
 }
 img {
 	width: 100%;
+	height: 100%;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-link {
+	color: rgb(255, 255, 255);
+	margin-right: 2em;
+}
+.icon {
+	margin: 2em;
 }
 .btn {
 	background-color: rgb(136, 11, 9);
@@ -39,26 +65,67 @@ img {
 	background-color: rgb(154, 11, 9);
 	color: rgb(144, 181, 144);
 }
-.wrap {
-	background-color: rgb(136, 11, 9);
-	width: fit-content;
-	margin: 10em auto;
-	padding: 2em;
-}
-.cursive {
-	font-family: Amatic SC, cursive;
-	font-weight: 700;
-}
-.prose img {
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+.share > a {
+	color: crimson;
+	font-weight: bold;
 }
 
-.home-name {
-	font-size: 150px;
+wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 100%);
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+section {
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	margin: 20px 0;
+}
+.item {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.091);
+	padding: 2px;
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: duration all;
+}
+.item:hover {
+	margin: 0 40px;
+	transform: scale(1.2);
+}
+
+.a {
+	position: absolute;
+	color: #fff;
+	text-decoration: none;
+	font-size: 6em;
+	background: rgb(0, 0, 0);
+	width: 80px;
+	padding: 20px;
+	text-align: center;
+	z-index: 1;
+}
+.a-l {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(
+		-90deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+.a-r {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
 }
