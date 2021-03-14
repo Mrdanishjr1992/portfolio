@@ -15,7 +15,9 @@ export default function Contact() {
 							<span className="text-white">Email: </span>
 							mrdanishjr1992@gmail.com
 						</p>
-						<p>Phone : 1(872)-305-0822</p>
+						<p>
+							<span className="text-white">Phone: </span> 1(872)-305-0822
+						</p>
 					</div>
 					<p className="mt-5">Contact Info</p>
 				</div>
