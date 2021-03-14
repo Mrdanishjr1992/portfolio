@@ -11,9 +11,11 @@ html {
 
 body {
 	margin: 0;
-	background-color: #242323;
+	padding: 0 3em;
+	background-color: rgba(0, 0, 0, 0.863);
 	max-width: 100vw;
 	max-height: 100vh;
+	box-sizing: border-box;
 }
 footer {
 	position: fixed;
@@ -56,16 +58,20 @@ img {
 	height: 50vh;
 	opacity: 0.8;
 	background-image: url(https://technical.ly/dc/wp-content/uploads/sites/5/2019/04/GA-main-desk-19-e1556565961812.jpg);
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
 }
 .hero {
+	padding: 1em;
 	position: absolute;
 	width: 100%;
-	text-align: center;
-	background: rgba(255, 255, 255, 0.659);
-	bottom: 2em;
-	font-size: 2rem;
-	font-weight: 700;
-	color: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.884);
+	top: 1.5em;
+	width: 33%;
+	font-size: 1.2em;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
 }
 .contact {
 	height: 100%;
@@ -75,21 +81,8 @@ img {
 	align-content: center;
 	justify-content: center;
 }
-.btn {
-	background-color: rgb(136, 11, 9);
-	padding: 1em;
-	font-size: 1.3em;
-	color: whitesmoke;
-	margin-left: 1em;
-}
-.btn:focus {
-	outline: none;
-}
-.btn:hover {
-	background-color: rgb(154, 11, 9);
-	color: rgb(144, 181, 144);
-}
-.share > a {
+.share > a,
+.a {
 	color: crimson;
 	font-weight: bold;
 }
@@ -116,12 +109,25 @@ section {
 	flex-direction: column;
 	align-items: center;
 	transition: duration all;
+	z-index: 1;
+	padding: 1em;
+	border: black 1px solid;
 }
 .item:hover {
-	margin: 0 40px;
-	transform: scale(1.2);
+	margin: 0 5em;
+	transform: scale(1.6);
+	-webkit-transform: scale(1.6);
+	-moz-transform: scale(1.6);
+	-ms-transform: scale(1.6);
+	-o-transform: scale(1.6);
+	z-index: 2;
+	background-color: rgb(4, 4, 4);
 }
-
+.contact-img {
+	height: 100%;
+	width: auto;
+}
+/* 
 .a {
 	position: absolute;
 	color: #fff;
@@ -152,4 +158,4 @@ section {
 		rgba(0, 0, 0, 0) 0%,
 		rgba(0, 0, 0, 1) 100%
 	);
-}
+} */

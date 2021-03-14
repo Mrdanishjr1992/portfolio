@@ -24,6 +24,9 @@ export default function NavBar() {
 				<a href="#contact" className="nav-link">
 					Contact
 				</a>
+				<a href="#resume" className="nav-link">
+					Resume
+				</a>
 			</nav>
 			<div className="icon-box">
 				<SocialIcon
