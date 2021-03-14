@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
+import React from 'react';
 
 export default function Project() {
-	const [postData, setPost] = useState(10);
-
-	useEffect(() => {}, []);
-
 	return (
 		<>
 			<h2 id="projects">PROJECTS</h2>

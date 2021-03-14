@@ -53,6 +53,13 @@ export default function About() {
 						<p>Seeker of knowledge</p>
 					</div>
 				</a>
+				<div className="item">
+					<img
+						src="https://images.pod.co/foGX84DCN-KT6YNQCC28AJyIQP9Gx2sdYHeKJu-jFDQ/resize:fill:600:600/plain/artwork/a06b57ae-faa5-40e6-aff2-4414e4ea7778/thinking-like-a-genius-podcast.jpg"
+						alt="much more"
+					/>
+					<p>Much more ...</p>
+				</div>
 			</section>
 		</>
 	);

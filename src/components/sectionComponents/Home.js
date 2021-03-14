@@ -7,6 +7,11 @@ import Project from './Project';
 export default function Home() {
 	return (
 		<main className="main">
+			<div className="campus">
+				<p className="hero">
+					Hi, I'm Mohamed Abdulah. Thank you for visiting my portfolio.
+				</p>
+			</div>
 			<div className="wrapper">
 				<Project />
 				<Skill />

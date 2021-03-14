@@ -51,6 +51,30 @@ img {
 .icon {
 	margin: 2em;
 }
+.campus {
+	position: relative;
+	height: 50vh;
+	opacity: 0.8;
+	background-image: url(https://technical.ly/dc/wp-content/uploads/sites/5/2019/04/GA-main-desk-19-e1556565961812.jpg);
+}
+.hero {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.659);
+	bottom: 2em;
+	font-size: 2rem;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+}
+.contact {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
 .btn {
 	background-color: rgb(136, 11, 9);
 	padding: 1em;
