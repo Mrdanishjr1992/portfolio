@@ -3,6 +3,7 @@ import SoftSkills from './SoftSkills';
 import Contact from './Contact';
 import Skill from './Skill';
 import Project from './Project';
+import About from './About';
 
 export default function Home() {
 	return (
@@ -19,6 +20,7 @@ export default function Home() {
 				<Project />
 				<Skill />
 				<SoftSkills />
+				<About />
 				<Contact />
 			</div>
 		</main>
