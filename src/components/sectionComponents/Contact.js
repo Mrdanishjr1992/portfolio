@@ -5,19 +5,28 @@ export default function Contact() {
 		<>
 			<h2>FEATURED</h2>
 			<section>
-				<div id="contact" className="item">
-					<h2 id="contact">CONTACT</h2>
-					<div className="contact">
-						<p>Email : mrdanishjr1992@gmail.com</p>
+				<div className="contact">
+					<h2 id="contact" className="mx-auto">
+						CONTACT
+					</h2>
+					<div className="item">
+						<img src="../images/contact.jpg" alt="resume" />
+						<p>
+							<span className="text-white">Email: </span>
+							mrdanishjr1992@gmail.com
+						</p>
 						<p>Phone : 1(872)-305-0822</p>
 					</div>
 					<p className="mt-5">Contact Info</p>
 				</div>
-				<div id="contact" className="item">
-					<h2 id="resume">RESUME</h2>
-					<div className="contact">
-						<p className="text-xl">
-							Resume :{' '}
+				<div className="contact">
+					<h4 id="resume" className="mx-auto">
+						RESUME
+					</h4>
+					<div className="item">
+						<img src="../images/resume.png" alt="resume" />
+						<p className="text-l p-2">
+							<span className="text-white">Resume: </span>{' '}
 							<a
 								href="https://docs.google.com/document/d/1IAXiz4Vk9NZU0oX8E2zZL1LVNZv4nvqKS0xD-My3EbE/edit?usp=sharing"
 								target="_blank"
