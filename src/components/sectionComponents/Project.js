@@ -56,7 +56,7 @@ export default function Project() {
 						</a>
 					</div>
 				</div>
-				<div className="item">
+				{/* <div className="item">
 					<img src="../images/rgm-landing.png" alt="storage space" />
 					<p>Storage Space</p>
 					<p>Django/Python app to hone my skills.</p>
@@ -65,7 +65,7 @@ export default function Project() {
 						<span> || </span>
 						<a href="https://github.com/Mrdanishjr1992/Storage-Space">GitHub</a>
 					</div>
-				</div>
+				</div> */}
 			</section>
 		</>
 	);

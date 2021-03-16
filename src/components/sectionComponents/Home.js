@@ -11,9 +11,13 @@ export default function Home() {
 			<div className="campus">
 				<p className="hero">
 					<p className="text-2xl">The wonderful life of Dev Danish.</p>
-					Hi, I'm Mohamed and I'm a software developer. This is a collection of
-					my journey so far.
-					<p>Rated E - for everyone</p>
+					Hi, I'm Mohamed or better knnown as Dev Danish, and I'm a software
+					developer. This is a Gallery of my journey so far on becoming the best
+					software engineer in history.
+					<p className="pt-1 text-lg">
+						Rated <span className="text-2xl text-red-600 font-bold">E</span> -
+						for Employers
+					</p>
 				</p>
 			</div>
 			<div className="wrapper">
