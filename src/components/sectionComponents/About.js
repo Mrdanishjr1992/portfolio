@@ -6,23 +6,29 @@ export default function About() {
 			<h2 id="about">ABOUT</h2>
 			<section>
 				<div className="item">
-					<img
-						className="contact-img"
-						src="../images/hero.png"
-						alt="g.a fighters"
-					/>
-					<p>Mohamed Abdulah</p>
-					<p>Dev Danish</p>
+					<p className="about-para">
+						Honestly I don't know how to give less than 100% in anything I do.
+						As a Technician, diagnostic ability measures your level of work. I
+						had to think about how a component works to figure out how it
+						malfunctions. Through many types of vehicles of all years I
+						developed strong focus, determination and patience when solving
+						problems and being able to see a clear picture in a faster pace.
+					</p>
+					<p className="mt-5 text-yellow-500">( About me )</p>
+					<p className="mt-5">Continue reading on next card</p>
 				</div>
 				<div className="item">
 					<p className="about-para">
-						Hello there, you can call me Moe or Danish. I'm 29 years old and
-						currently seeking for employment as a software engineer. I'm not the
-						kind to brag, but I would be a valuable assest to your team.
+						I know I can offer something great to this world and just want to
+						give something back before I kick the bucket. The Tech world has a
+						lot more opportunities for one to contribute than my prior work.
+						General Assembly has Taught me many things in Computer Science from
+						fundamentals to Big O to building Full Stack applications, but the
+						most important thing I received was the ability to learn and
+						understand where to obtain this information.
 					</p>
-					<p className="mt-5">About me</p>
+					<p className="mt-5 text-yellow-500">End of ( About me )</p>
 				</div>
-
 				<div className="item">
 					<p className="about-para">
 						Software Engineering in my opinion is a vast Ocean of Knowledge and
@@ -30,19 +36,7 @@ export default function About() {
 						Einstein. I am a seeker of knowledge and hope that I can offer
 						something to the world.
 					</p>
-					<p className="mt-5">Personal Quote</p>
-				</div>
-				<div className="item">
-					<p className="about-para">
-						Honestly I don't know how to give less than 100% in anything I do.
-						Any problems whether work , family, health, or financial that I come
-						across, putting all my attention on it would give me great results.
-						After marriage, I feel like a hidden power was unlocked within me
-						that made motivation so natural and constant. I just want to give
-						something to the world before I kick the bucket. The Tech world has
-						a lot more opportunities to contribute than my prior jobs.
-					</p>
-					<p className="mt-1">Brand Statement</p>
+					<p className="mt-5 text-yellow-500">Personal Quote</p>
 				</div>
 			</section>
 		</>

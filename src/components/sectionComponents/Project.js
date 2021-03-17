@@ -7,7 +7,7 @@ export default function Project() {
 			<section id="section1">
 				<div className="item">
 					<img src="../images/rgm-loading.png" alt="retro game maker" />
-					<p>Retro Game Maker</p>
+					<p className="text-yellow-500">Retro Game Maker</p>
 					<p>This is a 2D game maker application.</p>
 					<div className="share">
 						<a href="https://retro-game-maker-app.herokuapp.com/">App Site</a>
@@ -19,7 +19,7 @@ export default function Project() {
 				</div>
 				<div className="item">
 					<img src="../images/wayfarer.png" alt="project wayfarer" />
-					<p>Wayfarer</p>
+					<p className="text-yellow-500">Wayfarer</p>
 					<p>This application was a collaborative team project using MERN.</p>
 					<div className="share">
 						<a href="https://wayfarer-app-1207.herokuapp.com/">App Site</a>
@@ -31,7 +31,7 @@ export default function Project() {
 				</div>
 				<div className="item">
 					<img src="../images/ga-fighters.png" alt="g.a fighters" />
-					<p>G.A - Fighters</p>
+					<p className="text-yellow-500">G.A - Fighters</p>
 					<p>
 						Game that resembles Street Fighters with the ability to add
 						characters.
@@ -46,7 +46,7 @@ export default function Project() {
 				</div>
 				<div className="item">
 					<img src="../images/tom.png" alt="tom" />
-					<p>Tomagatchi Pets</p>
+					<p className="text-yellow-500">Tomagatchi Pets</p>
 					<p>My very first application using only HTML, CSS, JS.</p>
 					<div className="share">
 						<a href="https://boring-spence-7df0b7.netlify.app/">App Site</a>

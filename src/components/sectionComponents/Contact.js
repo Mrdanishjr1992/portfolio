@@ -12,11 +12,12 @@ export default function Contact() {
 					<div className="item">
 						<img src="../images/contact.jpg" alt="resume" />
 						<p>
-							<span className="text-white">Email: </span>
+							<span className="mt-5 text-yellow-500">Email: </span>
 							mrdanishjr1992@gmail.com
 						</p>
 						<p>
-							<span className="text-white">Phone: </span> 1(872)-305-0822
+							<span className="mt-5 text-yellow-500">Phone: </span>{' '}
+							1(872)-305-0822
 						</p>
 					</div>
 				</div>
@@ -27,7 +28,7 @@ export default function Contact() {
 					<div className="item">
 						<img src="../images/resume.png" alt="resume" />
 						<p className="text-l p-2">
-							<span className="text-white">Resume: </span>{' '}
+							<span className="mt-5 text-yellow-500">Resume: </span>{' '}
 							<a
 								href="https://docs.google.com/document/d/1IAXiz4Vk9NZU0oX8E2zZL1LVNZv4nvqKS0xD-My3EbE/edit?usp=sharing"
 								target="_blank"

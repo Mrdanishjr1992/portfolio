@@ -8,15 +8,28 @@ import About from './About';
 export default function Home() {
 	return (
 		<main className="main">
-			<div className="campus">
+			<div
+				className="campus"
+				style={{
+					backgroundImage: 'url(../images/hero.png)',
+				}}
+			>
 				<p className="hero">
-					<p className="text-2xl">The wonderful life of Dev Danish.</p>
-					Hi, I'm Mohamed or better knnown as Dev Danish, and I'm a software
-					developer. This is a Gallery of my journey so far on becoming the best
-					software engineer in history.
+					<p className="text-xl mb-3 text-yellow-500">
+						The Wonderful Life of Moe Danish.
+					</p>
+					Greetings, My name is Mohamed A. Danish. As a 29 year old seeking
+					employment for software engineer, I can be an incredible asset to your
+					team. I provide a wide range of growing skills including Javascript,
+					Mongodb, Python, Django and React. My life experiences has equip me
+					with a unique ability to adapt to situations, think quickly on my feet
+					and most importantly become a dependable teammate.
 					<p className="pt-1 text-lg">
-						Rated <span className="text-2xl text-red-600 font-bold">E</span> -
-						for Employers
+						Rated{' '}
+						<span className="text-2xl text-yellow-500 font-bold inline-block transform rotate-0 p-2">
+							E
+						</span>{' '}
+						- for Employers
 					</p>
 				</p>
 			</div>

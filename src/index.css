@@ -67,7 +67,7 @@ img {
 	position: relative;
 	height: 50vh;
 	opacity: 0.8;
-	background-image: url(https://technical.ly/dc/wp-content/uploads/sites/5/2019/04/GA-main-desk-19-e1556565961812.jpg);
+	/* background-image: url(https://technical.ly/dc/wp-content/uploads/sites/5/2019/04/GA-main-desk-19-e1556565961812.jpg); */
 	background-size: contain;
 	background-position: top;
 	background-repeat: no-repeat;
